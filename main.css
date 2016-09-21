@@ -1,0 +1,259 @@
+/*****************
+GENERAL
+******************/
+
+body {
+	font-family:'Economica';
+}
+
+h1, h2, h3 {
+	margin:0px;
+	cursor:pointer;
+	text-align:center;
+}
+
+h1 {
+	font-size:80px;
+	color:#CC6600;
+	width:50%;
+	margin:0 auto;
+}
+
+h2 {
+	font-size:50px;
+	color:#555555;
+}
+
+table {
+	margin:5px;
+	width:100%;
+	font-size:40px;
+}
+
+a {
+    font-size:30px;
+	text-decoration:none;
+	color:#CC6600;
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	text-align:center;
+	display:none;
+}
+
+/*****************
+MAIN TITLE
+******************/
+
+#title_img {
+    display:block;
+    margin:0 auto;
+    padding:0px;
+}
+
+#div_title {
+	width:100%;
+}
+
+#title_main {
+/*	color:#0080DD;*/
+	color:#336622;
+	font-size:200px;
+}
+
+/*****************
+THE BAND
+******************/
+
+#title_theband {
+    display:block;
+    margin:0 auto;
+}
+
+section {
+    width:100%;
+    margin:10px 0;
+    text-align:center;
+}
+
+.section_band {
+    color:#CC6600;
+}
+
+.div_memberdiv {
+    display:inline-block;
+    width:15%;
+}
+
+.div_membername {
+    font-size:40px;
+}
+
+.img_memberpic {
+    height:192px;
+    width:128px;
+    margin:10px auto;
+    cursor:pointer;
+}
+
+.div_memberinst {
+    font-size:20px
+}
+
+.backarrow {
+    width:40px;
+    height:40px;
+    margin-bottom:10%;
+}
+
+#view_extband {
+	cursor:pointer;
+}
+
+#list_extband {
+	display:none;
+}
+
+#bio_theband {
+	width:70%;
+	text-align:center;
+	display:block;
+	margin:0 auto;
+}
+
+#section_past_members img {
+    cursor:auto;
+}
+
+
+/*****************
+THE MUSIC
+******************/
+
+#div_themusic h3 {
+	color:#555555;
+}
+
+#title_themusic {
+/*	color:#00DD88;*/
+	color:#CC6600;
+}
+
+#title_sounds li {
+	margin:0px;
+	padding:0px;
+}
+
+#table_sounds img {
+	height:250px;
+	width:250px;
+	margin:20px;
+}
+
+#table_sounds td {
+	text-align:center;
+	color:#00DD88;
+}
+
+#list_press {
+    width:70%;
+    margin:0 auto;
+    color:#555;
+}
+
+.press_quote {
+    color:#555;
+    font-size:20px;
+    margin:10px 0;
+}
+
+.press_source {
+    color:#CC6600;
+    margin-bottom: 10px;
+}
+
+.press_source a {
+    font-size: 16px;
+}
+
+.themusic_hidden {
+	display:none;
+}
+
+.content_sights {
+    display:none;
+}
+
+
+/*****************
+THE SHOWS
+******************/
+
+#div_theshows {
+    text-align:center;
+}
+
+.widget_iframe {
+	text-align:center;
+	display:none;
+}
+
+#iframe_theshows {
+	width:50%;
+}
+
+#div_theshows a {
+    display:none;
+    margin:10px 0;
+}
+
+/*****************
+THE MERCH
+******************/
+
+.titles_themerch {
+	display:none;
+}
+
+.titles_themerch a {
+	color: #555555;
+	font-size:50px;
+}
+
+/*****************
+CONTACT US
+******************/
+
+#title_contactus {
+	color:#555555;
+	margin:0 auto;
+}
+
+#form_contactus {
+	display:none;
+	text-align:center;
+}
+
+/*****************
+FOOTER
+******************/
+
+#div_sociallinks {
+	border:none;
+	height:20%;
+	margin:2px;
+}
+
+.img_sociallinks {
+	height:48px;
+	width:48px;
+}
+
+footer {
+    margin:25px 0;
+	text-align:center;
+	height:20%;
+}
