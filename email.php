@@ -10,9 +10,6 @@ $email_to = "bellsandhunters@gmail.com";
 
 $email_from = "BELLSANDHUNTERS.COM";
 
-if($subject == null || $email_to == null || $email_from == null):
-	echo "something went wrong";
-
 /*HEAD IT*/
 $headers = 'From: '.$email_from."\r\n".
  

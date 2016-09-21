@@ -3,7 +3,7 @@ GENERAL
 ******************/
 
 body {
-	font-family:'Economica';
+	font-family:'Dosis', sans-serif;
 }
 
 h1, h2, h3 {
@@ -12,21 +12,20 @@ h1, h2, h3 {
 	text-align:center;
 }
 
-h1 {
+h2 {
 	font-size:80px;
 	color:#CC6600;
 	width:50%;
 	margin:0 auto;
 }
 
-h2 {
+h3 {
 	font-size:50px;
 	color:#555555;
 }
 
 table {
-	margin:5px;
-	width:100%;
+	margin:5px auto;
 	font-size:40px;
 }
 
@@ -52,6 +51,7 @@ MAIN TITLE
     display:block;
     margin:0 auto;
     padding:0px;
+    height: 400px;
 }
 
 #div_title {
@@ -158,6 +158,7 @@ THE MUSIC
 	color:#00DD88;
 }
 
+
 #list_press {
     width:70%;
     margin:0 auto;
@@ -257,3 +258,4 @@ footer {
 	text-align:center;
 	height:20%;
 }
+

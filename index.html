@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <HTML>
 	<html lang='en'>
-	<head>
+	<head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" type="image/png" href="favicon.png">
 		<meta charset="utf-8">
 		<title>
 			Bells & Hunters
@@ -20,10 +21,10 @@
                 g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
             })();
         </script>
+        <!-- End Piwik Code -->
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="colorbox/colorbox.css">
-		<link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700|Open+Sans:400,800|Loved+by+the+King:400' rel='stylesheet' type='text/css'>
-		<script src="../jquery-2.1.1.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Dosis:400' rel='stylesheet' type='text/css'>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="colorbox/jquery.colorbox-min.js"></script>
@@ -31,14 +32,14 @@
 	</head>
 	<body>
 		<div id="div_title">
-			<img src="img/headbanner.png" id="title_img">
+			<img src="img/CircleLogo_v2.png" id="title_img">
 		</div>
 		<div id="div_theband">
-			<h1 class="titles_theband" id="title_theband">
+			<h2 class="titles_theband" id="title_theband">
 				THE BAND
-			</h1>
+			</h2>
 			<p id='bio_theband'>
-				Bells and Hunters was formed in 2008 by Kelly Ann Beavers and Keith Fischer over a mutual love of creativity, song writing, and Jeff Buckley. In the years since, the band has distinguished itself with an eclectic sound that mixes elements of American folk, blues, and 90's rock behind Kelly and Keith's soulful vocals. In 2010 the band recorded their debut EP, "The Static Sea," and in 2013 released the critically acclaimed album "Weddings and Funerals". Currently, the band continues to perform live - including notable 2014 performances at Gypsy Sally's (Washington DC), Spike Hill (Brooklyn, NY), and the Melonfest Music Festival (Berea, KY) - and is currently recording their 3rd album set for release in 2015.
+				Bells and Hunters was formed in 2008 by Kelly Ann Beavers and Keith Fischer over a mutual love of creativity, song writing, and Jeff Buckley. In the years since, the band has distinguished itself with an eclectic sound that mixes roots and 90’s rock, folk, blues, and guitar solos behind Kelly and Keith’s unique vocals. In 2010 the band recorded their debut EP,The Static Sea, and in 2013 released the critically acclaimed album Weddings and Funerals. Currently, with Guido DeHoratiis (drums), Joe McMurray (lead guitar) and Avi Walter (bass) the band is set to release a new full length album -Modern Witch's Songbook - in 3 parts.  The first installment, Vol I: Fairy Tales, was released on October 6, 2015.
 			</p>
 			<ul id="list_theband">
 				<li>
@@ -88,21 +89,6 @@
                                 lead guitar
                             </div>
                         </div>
-                        <div class="div_memberdiv" id="div_eric">
-                            <div class="div_membername" id="div_ericname">
-                                ERIC
-                            </div>
-                            <div class="div_memberpic" id="div_ericpic">
-                                <a class="cbox_eric" href="img/people/eric1.jpg"><img class="img_memberpic" src="img/people/eric1.jpg"></a>
-                                <a class="cbox_eric" href="img/people/eric2.jpg"></a>
-                                <a class="cbox_eric" href="img/people/eric3.jpg"></a>
-                                <a class="cbox_eric" href="img/people/eric4.jpg"></a>
-                                <a class="cbox_eric" href="img/people/eric5.jpg"></a>
-                            </div>
-                            <div class="div_memberinst" id="div_ericinst">
-                                bass guitar
-                            </div>
-                        </div>
                         <div class="div_memberdiv" id="div_guido">
                             <div class="div_membername" id="div_guidoname">
                                 GUIDO
@@ -118,14 +104,39 @@
                                 drums
                             </div>
                         </div>
+                        <div class="div_memberdiv" id="div_avi">
+                            <div class="div_membername" id="div_aviname">
+                                AVI
+                            </div>
+                            <div class="div_memberpic" id="div_avipic">
+                                <a class="cbox_avi" href="img/people/avi1.png"><img class="img_memberpic" src="img/people/avi1.png"></a>
+                            </div>
+                            <div class="div_memberinst" id="div_aviinst">
+                                bass guitar
+                            </div>
+                        </div>
                     </section>
 			    </li>
 			    <li>
 				<p id="view_extband">Click here to view our extended family...</p>
 			    </li>
 			    <li id="list_extband">
-				    <h2 class="titles_theband" id="title_extband">Extended Family</h2>
+				    <h3 class="titles_theband" id="title_extband">Extended Family</h3>
                     <section class="section_band" id="section_past_members">
+                    <div class="div_memberdiv" id="div_eric">
+                        <div class="div_membername" id="div_ericname">
+                           ERIC
+                        </div>
+                        <div class="div_memberpic" id="div_ericpic">
+                            <img class="img_memberpic" src="img/people/eric1.jpg"></a>
+                        </div>
+                        <div class="div_memberinst" id="div_ericinst">
+                            bass guitar
+                        </div>
+                        <div>
+                            2012-2015
+                        </div>
+                    </div>
                     <div class="div_memberdiv" id="div_igor">
                         <div class="div_membername" id="div_igorname">
                             IGOR
@@ -216,14 +227,14 @@
 		    </ul>
 		</div>
 		<div id="div_themusic">
-			<h1 id="title_themusic">
+			<h2 id="title_themusic">
 				THE MUSIC
-			</h1>
+			</h2>
 			<ul id="list_themusic">
 				<li class="themusic_shown">
-			<h2 id="title_sights">
+			<h3 id="title_sights">
 				SIGHTS
-			</h2>
+			</h3>
 				</li>
 				<li id="table_sights" class="content_sights">
 				<table>
@@ -247,9 +258,9 @@
 				</li>
                 <a class="content_sights" href="https://www.youtube.com/user/bellsandhunters" target="_blank">Click here to see more...</a>
 				<li class="themusic_shown">
-                    <h2 id="title_sounds">
+                    <h3 id="title_sounds">
                         SOUNDS
-                    </h2>
+                    </h3>
 				</li>
 				<li id="table_sounds" class="themusic_hidden">
 				<table>
@@ -260,8 +271,14 @@
 						<td class="name_albums">
 							<a href="http://bellsandhunters.bandcamp.com/album/weddings-and-funerals" target="_blank">WEDDINGS AND FUNERALS</a>
 						</td>
+                        <td class="name_albums">
+                            <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-i-fairy-tales-2" target="_blank">MODERN WITCH'S SONGBOOK </br>VOL 1: FAIRY TALES</a>
+                        </td>
+                        <td class="name_albums">
+                            <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-ii-wives-tales" target="_blank">MODERN WITCH'S SONGBOOK </br>VOL 2: WIVES TALES</a>
+                        </td>
 						<td class="name_albums">
-							<a href="http://www.soundcloud.com/bellsandhunters" target="_blank">B-SIDES & RARITIES</a>
+							<a href="http://www.soundcloud.com/bellsandhunters" target="_blank">DEMOS AND IDEAS</a>
 						</td>
 					</tr>
 					<tr>
@@ -271,6 +288,12 @@
 						<td class="pic_albums">
 							<a href="http://bellsandhunters.bandcamp.com/album/weddings-and-funerals" target="_blank"><img src="img/misc/weddingsandfunerals_cover.jpg"></a>
 						</td>
+                        <td class="pic_albums">
+    						<a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-i-fairy-tales-2" target="_blank"><img src="img/misc/modernwitchvol1_cover.jpg"></a>
+						</td>
+                        <td class="pic_albums">
+        					<a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-ii-wives-tales" target="_blank"><img src="img/modernwitchvol2_cover.jpg"></a>
+						</td>
 						<td class="pic_albums">
 							<a href="http://www.soundcloud.com/bellsandhunters" target="_blank"><img src="img/socialmedia/soundcloud.png"></a>
 						</td>
@@ -278,9 +301,9 @@
 				</table>
 			</li>
                 <li class="themusic_shown">
-                    <h2 id="title_thepress">
+                    <h3 id="title_thepress">
                         PRESS
-                    </h2>
+                    </h3>
                     <ul id="list_press">
                         <li><a id="title_morepress" style="cursor:pointer">Click here to see more...</a></li>
                     </ul>
@@ -288,7 +311,7 @@
             </ul>
 		</div>
 		<div id="div_theshows">
-			<h1 id="title_theshows">THE SHOWS</h1>
+			<h2 id="title_theshows">THE SHOWS</h2>
 			<div id="widget_theshows" class="widget_iframe" style="height:550px;padding:0;border:0;">
 				<iframe id="iframe_theshows" class="widget_iframe" 				src="http://www.reverbnation.com/widget_code/html_widget/artist_1390238?widget_id=52&pwc[design]=customized&pwc[background_color]=%23ffffff&pwc[layout]=detailed&pwc				[show_map]=0%2C1&pwc[size]=fit" height="100%" frameborder="0" scrolling="no">
 				</iframe>
@@ -296,14 +319,14 @@
             <a class="widget_iframe" href="https://docs.google.com/document/d/1qu-sFv01eQwp7S2Ivl10xoyucN99eXO7ZYOG5hfOa-E/pub" target="_blank">Click here to see past shows...</a>
 		</div>
 		<div id="div_themerch">
-			<h1 id="title_themerch">THE MERCH</h1>
-				<h2 class="titles_themerch" id="title_shirts"><a href="http://bellsandhunters.bandcamp.com/merch/weddings-and-funerals-logo-t-shirt" target="_blank">SHIRTS<a></h2>
-				<h2 class="titles_themerch" id="title_cds"><a href="http://www.cdbaby.com/Artist/BellsandHunters" target="_blank">CDs</a></h2>
+			<h2 id="title_themerch">THE MERCH</h2>
+				<h3 class="titles_themerch" id="title_shirts"><a href="http://bellsandhunters.bandcamp.com/merch/weddings-and-funerals-logo-t-shirt" target="_blank">SHIRTS<a></h3>
+				<h3 class="titles_themerch" id="title_cds"><a href="http://www.cdbaby.com/Artist/BellsandHunters" target="_blank">CDs</a></h3>
 		</div>
 		<div id="div_contactus">
-			<h1 id="title_contactus">
+			<h2 id="title_contactus">
 				CONTACT US
-			</h1>
+			</h2>
 			<div id="form_contactus">
 				<form name="contactform" method="post" action="email.php">
 					Name:<br>
@@ -326,5 +349,5 @@
 			<a href="http://www.youtube.com/bellsandhunters" target="_blank"><img src="img/socialmedia/youtube.png" class="img_sociallinks"></a>
 			<a href="https://www.soundcloud.com/bellsandhunters" target="_blank"><img src="img/socialmedia/soundcloud.png" class="img_sociallinks"></a>
 		</div>
-		<p>Copyright Bells and Hunters 2014<p>
+		<p>Copyright Bells and Hunters 2016<p>
 	</footer>

@@ -1,0 +1,30 @@
+#img_header {
+    cursor:default;
+    margin: 0 auto;
+    display:block;
+    }
+
+div {
+    border: 3px solid #CC6600;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url('favicon.jpg');
+    background-position: center middle;
+}
+
+#div_upload {
+    background-color: #fff;
+    background-image: none;
+    height:30px;
+    width: auto;
+    margin: 0 auto;
+    display:block;
+    padding: 6px;
+    text-align: center;
+}
+
+object {
+    margin:0 auto;
+    display:block;
+}

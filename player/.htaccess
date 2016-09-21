@@ -1,0 +1,7 @@
+#<Directory /home/content/k/e/i/keithficher/html/bellsandhunters/player>
+    AuthType Basic
+    AuthName "Protected by GOD"
+    AuthUserFile /home/content/k/e/i/keithficher/html/.htpasswd
+    Require user bnh
+    Satisfy All
+#</Directory>

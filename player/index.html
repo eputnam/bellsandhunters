@@ -1,0 +1,31 @@
+<HTML>
+    <head profile="http://www.w3.org/2005/10/profile">
+        <link rel="icon" type="image/png" href="../favicon.png">
+        <title>
+            BELLS AND HUNTERS PLAYER
+        </title>
+        <link type="text/css" rel="stylesheet" href="../main.css">
+        <link type="text/css" rel="stylesheet" href="player.css">
+		<link href='http://fonts.googleapis.com/css?family=Economica:400,400italic,700' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../main.js"></script>
+    </head>
+    <body>
+        <img id="img_header" src='webplayer_bnh_headbanner.png' style="width:850px"/>
+        <div>
+        <object type="application/x-shockwave-flash" data="dewplayer-playlist.swf" width="240" height="200" id="dewplayer" name="dewplayer">
+            <param name="wmode" value="transparent" />
+            <param name="movie" value="dewplayer-playlist.swf" />
+            <param name="flashvars" value="xml=playlist.xml" />
+        </object>
+        <div id="div_upload">
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Select song to upload:
+                <input type="file" value="Choose File" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Song" name="submit">
+            </form>
+        </div>
+        </div>
+    </body>
+</HTML>
