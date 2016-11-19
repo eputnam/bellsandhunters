@@ -148,7 +148,6 @@ function selectPress() {
 
 $(document).ready(function() {
 	$('#bio_theband').hide();
-	
 //	$('.backarrow').hide();
 
 
@@ -171,15 +170,13 @@ $(document).ready(function() {
 		$('#view_extband').toggle('fast');
 		$('#list_extband').toggle('slow');
     });
-	
     $('#title_extband').click(function() {
 		$('#view_extband').toggle('fast');
 		$('#list_extband').toggle('slow');
     });
-	
 	//THE MUSIC
 
-    selectPress();
+  selectPress();
 
 	openSection('#title_themusic','#list_themusic');
 
@@ -187,21 +184,18 @@ $(document).ready(function() {
 
 	openSection('#title_sounds','#table_sounds');
 
-    openSection('#title_thepress','#list_press');
-	
+  openSection('#title_thepress','#list_press');
+
 	//THE SHOWS
 	openSection('#title_theshows','.widget_iframe');
-    
-    openSection('#title_pastshows','#doc_widget')
-	
+
+  openSection('#title_pastshows','#doc_widget')
+
 	//THE MERCH
 	openSection('#title_themerch','.titles_themerch');
-	
+
 	fadeIt('#title_shirts');
-	
+
 	fadeIt('#title_cds');
-	
-	//CONTACT US
-	openSection('#title_contactus','#form_contactus');
 
 });

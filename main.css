@@ -30,7 +30,7 @@ table {
 }
 
 a {
-    font-size:30px;
+  font-size:30px;
 	text-decoration:none;
 	color:#CC6600;
 }
@@ -231,11 +231,7 @@ CONTACT US
 #title_contactus {
 	color:#555555;
 	margin:0 auto;
-}
-
-#form_contactus {
-	display:none;
-	text-align:center;
+  cursor: default;
 }
 
 /*****************
@@ -254,7 +250,7 @@ FOOTER
 }
 
 footer {
-    margin:25px 0;
+  margin:25px 0;
 	text-align:center;
 	height:20%;
 }
