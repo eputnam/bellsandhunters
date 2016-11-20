@@ -1,3 +1,65 @@
+var members = [
+    {
+        "name": "Keith",
+        "instrument": "guitar, vocals",
+        "dates": "current"
+    },
+    {
+        "name": "Kelly",
+        "instrument": "vocals",
+        "dates": "current"
+    },
+    {
+        "name": "Joe",
+        "instrument": "lead guitar",
+        "dates": "current"
+    },
+    {
+        "name": "Guido",
+        "instrument": "drums",
+        "dates": "current"
+    },
+    {
+        "name": "Avi",
+        "instrument": "bass guitar",
+        "dates": "current"
+    },
+    {
+        "name": "Eric",
+        "instrument": "bass guitar",
+        "dates": "2012-2015"
+    },
+    {
+        "name": "Igor",
+        "instrument": "lead guitar",
+        "dates": "2011-2014"
+    },
+    {
+        "name": "Terry",
+        "instrument": "drums",
+        "dates": "2011-2013"
+    },
+    {
+        "name": "Cliff",
+        "instrument": "bass guitar",
+        "dates": "2009-2012"
+    },
+    {
+        "name": "Nate",
+        "instrument": "guitar, harmonica",
+        "dates": "2008-2011"
+    },
+    {
+        "name": "Kurt",
+        "instrument": "drums",
+        "dates": "2009-2011"
+    },
+    {
+        "name": "Orind",
+        "instrument": "lead guitar",
+        "dates": "2009-2010"
+    }
+]
 
 //USED TO OPEN SECTIONS OF THE SITE, INCLUDES fadeIt()
 function openSection(header, section) {
@@ -54,7 +116,33 @@ function picBox(member,col_id, img1, img2, img3) {
 }
 
 
+function showExtendedFamily() {
+    $.each(members, function(key,member){
+        if(member["dates"].toLowerCase() != "current"){
+            var name = member['name'].toLowerCase();
+            var inst = member['instrument'].toLowerCase();
+            var dates = member['dates'];
 
+            var extendedFamilyBlock = " \
+            <div class='div_memberdiv' id='div_" + name + "'> \
+            <div class='div_membername'> \
+            " + name.toUpperCase() + " \
+            </div> \
+            <div class='div_memberpic'> \
+            <img class='img_memberpic' src='img/people/" + member["name"].toLowerCase() + "1.jpg'></a> \
+            </div> \
+            <div class='div_memberinst'> \
+            " + inst + " \
+            </div> \
+            <div> \
+            " + dates + " \
+            </div> \
+            </div> \
+           "
+        }
+        $("#section_past_members").append(extendedFamilyBlock);
+    })
+}
 
 //SELECTS RANDOM PRESS QUOTES AND DISPLAYS THEM, ALSO DISPLAYS REMAINING QUOTES ON DEMAND
 function selectPress() {
@@ -197,5 +285,7 @@ $(document).ready(function() {
 	fadeIt('#title_shirts');
 
 	fadeIt('#title_cds');
+
+  showExtendedFamily();
 
 });
