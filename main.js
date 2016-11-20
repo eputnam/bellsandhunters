@@ -116,6 +116,61 @@ function picBox(member,col_id, img1, img2, img3) {
 }
 
 
+function getMembersArray(currentOrPast) {
+    membersArray = [];
+
+    switch(currentOrPast.toLowerCase()) {
+        case "current":
+            $.each(members, function(key, member) {
+                if(member["dates"].toLowerCase() == "current"){
+                    membersArray.push(members[key]);
+                }
+            });
+            break;
+        case "past":
+            $.each(members, function(key, member) {
+                if(member["dates"].toLowerCase() != "current"){
+                    membersArray.push(members[key]);
+                }
+            });
+            break;
+        default:
+            console.log("could not build member list");
+    }
+
+    return membersArray;
+
+}
+
+function showCurrentMembers() {
+    var membersArray = getMembersArray("current");
+
+    $.each(membersArray, function(key, member){
+        var name = member["name"].toLowerCase();
+        var inst = member["instrument"];
+        var currentMemberBlock = " \
+            <div class='div_memberdiv' id='div_" + name + "'> \
+            <div class='div_membername'> \
+            <h2>" + name.toUpperCase() + "</h2> \
+            </div> \
+            <div class='div_memberpic'> \
+            <a class='cbox_" + name + "' href='img/people/" + name + "1.jpg'><img class='img_memberpic' src='img/people/" + name + "1.jpg'></a> \
+            <a class='cbox_" + name + "' href='img/people/" + name + "2.jpg'></a> \
+            <a class='cbox_" + name + "' href='img/people/" + name + "3.jpg'></a> \
+            <a class='cbox_" + name + "' href='img/people/" + name + "4.jpg'></a> \
+            <a class='cbox_" + name + "' href='img/people/" + name + "5.jpg'></a> \
+            </div> \
+            <div class='div_memberinst'> \
+            " + inst + " \
+            </div> \
+            </div> \
+            ";
+        $("#section_current_members").append(currentMemberBlock);
+
+    })
+
+}
+
 function showExtendedFamily() {
     $.each(members, function(key,member){
         if(member["dates"].toLowerCase() != "current"){
@@ -240,6 +295,9 @@ $(document).ready(function() {
 
 
 
+    showCurrentMembers();
+    showExtendedFamily();
+
     //THE BAND
 	fadeIt('#title_theband');
     $('#title_theband').click(function() {
@@ -286,6 +344,5 @@ $(document).ready(function() {
 
 	fadeIt('#title_cds');
 
-  showExtendedFamily();
 
 });
