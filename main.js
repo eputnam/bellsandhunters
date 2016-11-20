@@ -143,7 +143,7 @@ function getMembersArray(currentOrPast) {
 }
 
 function showCurrentMembers() {
-    var membersArray = getMembersArray("current");
+    var membersArray = getMembersArray('current');
 
     $.each(membersArray, function(key, member){
         var name = member["name"].toLowerCase();
@@ -172,13 +172,14 @@ function showCurrentMembers() {
 }
 
 function showExtendedFamily() {
-    $.each(members, function(key,member){
-        if(member["dates"].toLowerCase() != "current"){
-            var name = member['name'].toLowerCase();
-            var inst = member['instrument'].toLowerCase();
-            var dates = member['dates'];
+    var membersArray = getMembersArray('past');
 
-            var extendedFamilyBlock = " \
+    $.each(membersArray, function(key,member){
+        var name = member['name'].toLowerCase();
+        var inst = member['instrument'].toLowerCase();
+        var dates = member['dates'];
+
+        var extendedFamilyBlock = " \
             <div class='div_memberdiv' id='div_" + name + "'> \
             <div class='div_membername'> \
             " + name.toUpperCase() + " \
@@ -193,8 +194,7 @@ function showExtendedFamily() {
             " + dates + " \
             </div> \
             </div> \
-           "
-        }
+            ";
         $("#section_past_members").append(extendedFamilyBlock);
     })
 }
