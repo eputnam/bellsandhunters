@@ -12,60 +12,61 @@ GENERAL
 
 body {
 	  font-family: 'Dosis', sans-serif;
+    text-align: center;
 }
 
 h1 {
     margin: 0px;
     cursor: pointer;
-    text-align: center;
     font-size: 4rem;
     color: var(--orange);
 }
 
 h2 {
-	margin: 0px;
-	cursor: pointer;
-	text-align: center;
-  font-size: 3rem;
-	color: var(--darkgrey);
+    margin: 0px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--darkgrey);
 }
 
 h3 {
-	font-size: 2rem;
-	color: var(--orange);
-	width: 50%;
-	margin: 0 auto;
+    font-size: 2rem;
+    color: var(--orange);
+    width: 50%;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
 }
 
 table {
-	margin: 5px auto;
-	font-size: 40px;
+    margin: 5px auto;
+    font-size: 40px;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 ul {
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	text-align: center;
-	display: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: none;
 }
 
 /*****************
 MAIN TITLE
 ******************/
 
-#title_img {
+#img_title {
     padding: 0px;
     width: 100%;
 }
 
 #div_title {
     width: 25%;
-    display: block;
     margin: 0 auto;
 }
 
@@ -73,15 +74,9 @@ MAIN TITLE
 THE BAND
 ******************/
 
-#title_theband {
-    display: block;
-    margin: 0 auto;
-}
-
 section {
     width: 100%;
     margin: 1.5% 0;
-    text-align: center;
 }
 
 .section_band {
@@ -120,8 +115,6 @@ section {
 
 #bio_theband {
 	width: 70%;
-	text-align: center;
-	display: block;
 	margin: 0 auto;
 }
 
@@ -132,10 +125,6 @@ section {
 /*****************
 THE MUSIC
 ******************/
-
-#div_themusic h3 {
-	color: var(--darkgrey);
-}
 
 #title_sounds li {
 	margin: 0px;
@@ -149,7 +138,6 @@ THE MUSIC
 }
 
 #table_sounds td {
-	text-align: center;
 	color: #00DD88;
 }
 
@@ -188,12 +176,7 @@ THE MUSIC
 THE SHOWS
 ******************/
 
-#div_theshows {
-    text-align: center;
-}
-
 .widget_iframe {
-	text-align: center;
 	display: none;
 }
 
@@ -241,7 +224,6 @@ FOOTER
 
 footer {
   margin: 25px 0;
-	text-align: center;
 	height: 20%;
 }
 
