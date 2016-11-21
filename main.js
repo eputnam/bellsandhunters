@@ -151,7 +151,7 @@ function showCurrentMembers() {
         var currentMemberBlock = " \
             <div class='div_memberdiv' id='div_" + name + "'> \
             <div class='div_membername'> \
-            <h2>" + name.toUpperCase() + "</h2> \
+            <h3>" + name.toUpperCase() + "</h3> \
             </div> \
             <div class='div_memberpic'> \
             <a class='cbox_" + name + "' href='img/people/" + name + "1.jpg'><img class='img_memberpic' src='img/people/" + name + "1.jpg'></a> \
@@ -182,7 +182,7 @@ function showExtendedFamily() {
         var extendedFamilyBlock = " \
             <div class='div_memberdiv' id='div_" + name + "'> \
             <div class='div_membername'> \
-            " + name.toUpperCase() + " \
+            <h3>" + name.toUpperCase() + "</h3> \
             </div> \
             <div class='div_memberpic'> \
             <img class='img_memberpic' src='img/people/" + member["name"].toLowerCase() + "1.jpg'></a> \
