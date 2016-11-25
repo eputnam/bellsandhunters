@@ -28,10 +28,10 @@
                     </section>
                 </li>
                 <li>
-                    <p id="view_extband">Click here to view our extended family...</p>
+                    <button class="more_button" id="view_extband">SHOW EXTENDED FAMILY</button>
                 </li>
                 <li id="list_extband">
-                    <h3 class="titles_theband" id="title_extband">Extended Family</h3>
+                    <button class="titles_theband more_button" id="title_extband">HIDE EXTENDED FAMILY</button>
                     <section class="section_band" id="section_past_members">
                     </section>
                 </li>
@@ -44,7 +44,6 @@
                     <h2 id="title_sights">SIGHTS</h2>
                 </li>
                 <li id="table_sights" class="content_sights">
-                    <!-- TODO: change to divs  -->
                     <table>
                         <tr>
                             <td>
@@ -63,64 +62,79 @@
                             </td>
                         </tr>
                     </table>
-                    <a class="content_sights" href="https://www.youtube.com/user/bellsandhunters" target="_blank"><p>Click here to see more...</p></a>
+                    <a class="content_sights" href="https://www.youtube.com/user/bellsandhunters" target="_blank"><button class="more_button">SEE MORE</button></a>
                 </li>
                 <li class="themusic_shown">
                     <h2 id="title_sounds">SOUNDS</h2>
                 </li>
-                <li id="table_sounds" class="themusic_hidden">
-                    <table>
-                        <tr>
-                            <td class="name_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/the-static-sea-ep" target="_blank">
-                                    <h3>THE STATIC SEA</h3>
-                                </a>
-                            </td>
-                            <td class="name_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/weddings-and-funerals" target="_blank">
-                                    <h3>WEDDINGS AND FUNERALS</h3>
-                                </a>
-                            </td>
-                            <td class="name_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-i-fairy-tales-2" target="_blank">
-                                    <h3>MODERN WITCH'S SONGBOOK </br>VOL 1: FAIRY TALES</h3>
-                                </a>
-                            </td>
-                            <td class="name_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-ii-wives-tales" target="_blank">
-                                    <h3>MODERN WITCH'S SONGBOOK </br>VOL 2: WIVES TALES</h3>
-                                </a>
-                            </td>
-                            <td class="name_albums">
-                                <a href="http://www.soundcloud.com/bellsandhunters" target="_blank">
-                                    <h3>DEMOS AND IDEAS</h3>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="pic_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/the-static-sea-ep" target="_blank"><img src="img/misc/staticsea_cover.jpg"></a>
-                            </td>
-                            <td class="pic_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/weddings-and-funerals" target="_blank"><img src="img/misc/weddingsandfunerals_cover.jpg"></a>
-                            </td>
-                            <td class="pic_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-i-fairy-tales-2" target="_blank"><img src="img/misc/modernwitchvol1_cover.jpg"></a>
-                            </td>
-                            <td class="pic_albums">
-                                <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-ii-wives-tales" target="_blank"><img src="img/modernwitchvol2_cover.jpg"></a>
-                            </td>
-                            <td class="pic_albums">
-                                <a href="http://www.soundcloud.com/bellsandhunters" target="_blank"><img src="img/socialmedia/soundcloud.png"></a>
-                            </td>
-                        </tr>
-                    </table>
+                <li id="list_thesounds" class="themusic_hidden">
+                    <div class="div_album">
+                        <div class="title_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/the-static-sea-ep" target="_blank">
+                                <h3>THE STATIC SEA</h3>
+                            </a>
+                        </div>
+                        <div class="img_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/the-static-sea-ep" target="_blank">
+                                <img src="img/misc/staticsea_cover.jpg" alt="THE STATIC SEA" title="THE STATIC SEA">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="div_album">
+                        <div class="title_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/weddings-and-funerals" target="_blank">
+                                <h3>WEDDINGS AND FUNERALS</h3>
+                            </a>
+
+                        </div>
+                        <div class="img_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/weddings-and-funerals" target="_blank">
+                                <img src="img/misc/weddingsandfunerals_cover.jpg" alt="WEDDINGS & FUNERALS" title="WEDDINGS & FUNERALS">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="div_album">
+                        <div class="title_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-i-fairy-tales-2" target="_blank">
+                                <h3>MODERN WITCH'S SONGBOOK </br>VOL 1: FAIRY TALES</h3>
+                            </a>
+                        </div>
+                        <div class="img_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-i-fairy-tales-2" target="_blank">
+                                <img src="img/misc/modernwitchvol1_cover.jpg" alt="MODERN WITCH'S SONGBOOK VOL 1" title="MODERN WITCH'S SONGBOOK VOL 1: FAIRY TALES">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="div_album">
+                        <div class="title_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-ii-wives-tales" target="_blank">
+                                <h3>MODERN WITCH'S SONGBOOK </br>VOL 2: WIVES TALES</h3>
+                            </a>
+                        </div>
+                        <div class="img_album">
+                            <a href="http://bellsandhunters.bandcamp.com/album/modern-witchs-songbook-vol-ii-wives-tales" target="_blank">
+                                <img src="img/modernwitchvol2_cover.jpg" alt="MODERN WITCH'S SONGBOOK VOL 2" title="MODERN WITCH'S SONGBOOK VOL 2: WIVES TALES">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="div_album">
+                        <div class="title_album">
+                            <a href="http://www.soundcloud.com/bellsandhunters" target="_blank">
+                                <h3>DEMOS AND IDEAS</h3>
+                            </a>
+                        </div>
+                        <div class="img_album">
+                            <a href="http://www.soundcloud.com/bellsandhunters" target="_blank">
+                                <img src="img/socialmedia/soundcloud.png" alt="DEMOS & IDEAS" title="DEMOS & IDEAS (SOUNDCLOUD)">
+                            </a>
+                        </div>
+                    </div>
                 </li>
                 <li class="themusic_shown">
                     <h2 id="title_thepress">PRESS</h2>
                     <ul id="list_press">
                         <li>
-                            <a id="title_morepress" style="cursor:pointer">Click here to see more...</a>
+                            <button id="title_morepress" cursor="pointer" class="more_button">SEE MORE</button>
                         </li>
                     </ul>
                 </li>
@@ -129,10 +143,11 @@
         <div id="div_theshows">
             <h1 id="title_theshows">THE SHOWS</h1>
             <div id="widget_theshows" class="widget_iframe" style="height:550px;padding:0;border:0;">
-                <iframe id="iframe_theshows" class="widget_iframe" 				src="http://www.reverbnation.com/widget_code/html_widget/artist_1390238?widget_id=52&pwc[design]=customized&pwc[background_color]=%23ffffff&pwc[layout]=detailed&pwc				[show_map]=0%2C1&pwc[size]=fit" height="100%" frameborder="0" scrolling="no">
+                <iframe id="iframe_theshows" class="widget_iframe" src="http://www.reverbnation.com/widget_code/html_widget/artist_1390238?widget_id=52&pwc[design]=customized&pwc[background_color]=%23ffffff&pwc[layout]=detailed&pwc				[show_map]=0%2C1&pwc[size]=fit" height="100%" frameborder="0" scrolling="no">
                 </iframe>
             </div>
-                <a class="widget_iframe" href="https://docs.google.com/document/d/1qu-sFv01eQwp7S2Ivl10xoyucN99eXO7ZYOG5hfOa-E/pub" target="_blank">Click here to see past shows...</a>
+            <a class="widget_iframe" href="https://docs.google.com/document/d/1qu-sFv01eQwp7S2Ivl10xoyucN99eXO7ZYOG5hfOa-E/pub" target="_blank">
+                <button class="more_button">SEE PAST SHOWS</button></a>
         </div>
         <div id="div_themerch">
             <h1 id="title_themerch">THE MERCH</h1>

@@ -200,7 +200,7 @@ function showExtendedFamily() {
 }
 
 //SELECTS RANDOM PRESS QUOTES AND DISPLAYS THEM, ALSO DISPLAYS REMAINING QUOTES ON DEMAND
-function selectPress() {
+function selectPress(numberToDisplay) {
     var $press1 = $("<li class='press_quote'>\"This one scores very high on the likability index " +
         "with an above average height on the quality scale and should be worth a listen for " +
         "fans of straight up American roots rock music.\"</li><li class='press_source'>" +
@@ -249,7 +249,7 @@ function selectPress() {
     var pressArray = [$press1,$press2,$press3,$press4,$press5,$press6,$press7,$press8,$press9];
     var selectArray = [];
 
-    for (i=0; i<4; i++) {
+    for (i=0; i < numberToDisplay; i++) {
         var x = Math.floor(Math.random() * (pressArray.length));
         selectArray.push(x);
         do{
@@ -291,7 +291,7 @@ function selectPress() {
 
 $(document).ready(function() {
 
-    var query = window.matchMedia("(max-width: 500px)");
+    var mobileQuery = window.matchMedia("(max-width: 500px)");
 
     showCurrentMembers();
     showExtendedFamily();
@@ -299,7 +299,7 @@ $(document).ready(function() {
     fadeIt('#title_theband');
 
     //THE BAND
-    if (!query.matches){
+    if (!mobileQuery.matches){
         $('#title_theband').click(function() {
             $('#bio_theband').toggle('slow');
             $('#list_theband').toggle('slow');
@@ -312,10 +312,12 @@ $(document).ready(function() {
 		        $('#view_extband').toggle('fast');
 		        $('#list_extband').toggle('slow');
         });
+        selectPress(4);
     } else {
         $('#title_theband').click(function() {
             $('#list_theband').toggle('slow');
         });
+        selectPress(1);
     }
 
     showLightBox('#div_keith','.cbox_keith');
@@ -326,13 +328,11 @@ $(document).ready(function() {
 
 	//THE MUSIC
 
-  selectPress();
-
 	openSection('#title_themusic','#list_themusic');
 
 	openSection('#title_sights','.content_sights');
 
-	openSection('#title_sounds','#table_sounds');
+	openSection('#title_sounds','#list_thesounds');
 
   openSection('#title_thepress','#list_press');
 

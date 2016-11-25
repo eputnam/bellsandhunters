@@ -2,12 +2,11 @@
 GENERAL
 ******************/
 
-
 :root {
     font-size: 14px;
     --orange: #CC6601;
     --darkgrey: #4E4849;
-    --lightgrey: #C3B9B0;
+    --lightgrey: #CDC1B9;
 }
 
 body {
@@ -56,6 +55,16 @@ ul {
     display: none;
 }
 
+.more_button {
+    background: var(--orange);
+    margin: 5px 0;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+}
+
 /*****************
 MAIN TITLE
 ******************/
@@ -66,7 +75,7 @@ MAIN TITLE
 }
 
 #div_title {
-    width: 25%;
+    width: 30%;
     margin: 0 auto;
 }
 
@@ -132,21 +141,27 @@ THE MUSIC
 	padding: 0px;
 }
 
-#table_sounds img {
-	height: 250px;
-	width: 250px;
-	margin: 20px;
-}
-
-#table_sounds td {
-	color: #00DD88;
-}
-
-
 #list_press {
     width: 70%;
     margin: 0 auto;
     color: var(--darkgrey);
+}
+
+.div_album {
+    display: inline-block;
+    width: 250px;
+}
+
+.div_album h3 {
+    width: 100%;
+}
+
+.title_album {
+    display: none;
+}
+
+.div_album img {
+    width: 100%;
 }
 
 .press_quote {
@@ -233,13 +248,13 @@ footer {
 MEDIA QUERIES
 ****************/
 
-@media (max-width: 500px) {
+@media (max-width: 420px) {
     :root {
         font-size: 16px;
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     h2 {
@@ -275,8 +290,28 @@ MEDIA QUERIES
         
     }
 
-    iframe {
+    .youtube {
         width: 100%;
         height: 60%;
+    }
+
+    .name_albums {
+        display:none;
+    }
+
+    #table_sounds {
+        margin: 0;
+    }
+
+    #iframe_theshows {
+        width: 80%;
+    }
+
+    #widget_theshows {
+        height: 350px;
+    }
+
+    .div_album {
+        width: 150px;
     }
 }
