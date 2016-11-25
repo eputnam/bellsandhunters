@@ -114,8 +114,9 @@ section {
 }
 
 #bio_theband {
-	width: 70%;
-	margin: 0 auto;
+    display: none;
+    width: 70%;
+    margin: 0 auto;
 }
 
 #section_past_members img {
@@ -227,3 +228,55 @@ footer {
 	height: 20%;
 }
 
+
+/****************
+MEDIA QUERIES
+****************/
+
+@media (max-width: 500px) {
+    :root {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #view_extband {
+        display: none;
+    }
+
+    #div_title {
+        width: 50%; 
+    }
+
+    .div_membername {
+        display: inline-block;
+    }
+
+    .div_membername h3 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    .div_memberinst, .div_memberdates {
+        display:none;
+    }
+
+    .img_memberpic {
+        width: 100%;
+        margin: 0;
+    }
+    #div_sociallinks img {
+        
+    }
+
+    iframe {
+        width: 100%;
+        height: 60%;
+    }
+}

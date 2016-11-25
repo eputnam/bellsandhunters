@@ -190,7 +190,7 @@ function showExtendedFamily() {
             <div class='div_memberinst'> \
             " + inst + " \
             </div> \
-            <div> \
+            <div class='div_memberdates'> \
             " + dates + " \
             </div> \
             </div> \
@@ -290,21 +290,33 @@ function selectPress() {
 //////////////////////////
 
 $(document).ready(function() {
-	$('#bio_theband').hide();
-//	$('.backarrow').hide();
 
-
+    var query = window.matchMedia("(max-width: 500px)");
 
     showCurrentMembers();
     showExtendedFamily();
 
-    //THE BAND
-	fadeIt('#title_theband');
-    $('#title_theband').click(function() {
-		$('#bio_theband').toggle('slow');
-        $('#list_theband').toggle('slow');
-    });
+    fadeIt('#title_theband');
 
+    //THE BAND
+    if (!query.matches){
+        $('#title_theband').click(function() {
+            $('#bio_theband').toggle('slow');
+            $('#list_theband').toggle('slow');
+        });
+        $('#view_extband').click(function() {
+		        $('#view_extband').toggle('fast');
+		        $('#list_extband').toggle('slow');
+        });
+        $('#title_extband').click(function() {
+		        $('#view_extband').toggle('fast');
+		        $('#list_extband').toggle('slow');
+        });
+    } else {
+        $('#title_theband').click(function() {
+            $('#list_theband').toggle('slow');
+        });
+    }
 
     showLightBox('#div_keith','.cbox_keith');
     showLightBox('#div_kelly','.cbox_kelly');
@@ -312,14 +324,6 @@ $(document).ready(function() {
     showLightBox('#div_avi','.cbox_avi');
     showLightBox('#div_guido','.cbox_guido');
 
-    $('#view_extband').click(function() {
-		$('#view_extband').toggle('fast');
-		$('#list_extband').toggle('slow');
-    });
-    $('#title_extband').click(function() {
-		$('#view_extband').toggle('fast');
-		$('#list_extband').toggle('slow');
-    });
 	//THE MUSIC
 
   selectPress();
